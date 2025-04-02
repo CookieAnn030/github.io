@@ -1,0 +1,36 @@
+/* 整体布局 */
+#book {
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* 封面设计 */
+.cover {
+    background: #f5e6d3 url('images/paper-texture.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-box {
+    text-align: center;
+    font-family: "华文行楷", cursive;
+    color: #6b4f3a;
+}
+
+/* 作品展示 */
+.artwork {
+    width: 75%;
+    border: 12px solid white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* 信息卡 */
+.info-card {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(255,255,255,0.9);
+    padding: 15px;
+    border-radius: 5px;
+}

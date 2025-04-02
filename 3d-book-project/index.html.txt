@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>温州屏纸版画数字展馆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pageflip@2.0.4/dist/css/page-flip.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/pageflip@2.0.4/dist/js/page-flip.min.js"></script>
+</head>
+<script>
+// 初始化电子书
+const book = new St.PageFlip(document.getElementById("book"), {
+    width: 1000,   // 根据封面宽度调整
+    height: 700,
+    showCover: true,
+    maxShadowOpacity: 0.5,
+    mobileScrollSupport: true
+});
+
+// 添加页面
+book.loadFromHTML(document.getElementsByClassName("page"));
+</script>
+<body>
+    <div id="book">
+    <!-- 封面 -->
+    <div class="page cover">
+        <img src="images/cover.jpg" class="artwork">
+        <div class="title-box">
+            <h1>温州屏纸版画</h1>
+            <p>传承非遗文化</p>
+        </div>
+    </div>
+
+    <!-- 内页模板 -->
+    <div class="page">
+        <img src="images/work-1.jpg" class="artwork">
+        <div class="info-card">
+            <h3>《雁荡秋色》</h3>
+            <p>作者：陈晓晓</p>
+            <p>创作时间：2023</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
